@@ -1,5 +1,4 @@
 import java.util.*;
-import java.math.*;
 
 public class Main {
 
@@ -10,7 +9,8 @@ public class Main {
         while (true) {
             System.out.println("______________________");
             System.out.println("| 1) EMI Calculating |");
-            System.out.println("| 2) EXIT            |");
+            System.out.println("| 2) Simple Interest |");
+            System.out.println("| 3) EXIT            |");
             System.out.println("----------------------");
             System.out.print("Enter Your Choice :");
             int choice = input.nextInt();
@@ -32,8 +32,22 @@ public class Main {
 
                     System.out.println("Monthly EMI = " + EMI);
                     break;
-
                 case 2:
+
+                    System.out.println("Enter Principal:");
+                    double simplePrincipal = input.nextDouble();
+
+                    System.out.println("Enter Rate:");
+                    double simpleInterestRate = input.nextDouble();
+
+                    System.out.println("Enter Time (years):");
+                    double timePeriod = input.nextDouble();
+
+                    double SI = (simplePrincipal * simpleInterestRate * timePeriod) / 100;
+
+                    System.out.println("Simple Interest = " + SI);
+                    break;
+                case 3:
                     System.out.println("Thank You For Using EMI Calculator");
                     System.exit(0);
             }
