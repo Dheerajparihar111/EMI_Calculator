@@ -34,10 +34,11 @@ public class Main {
                     double totalPayment = EMI * Months;
 
                     double totalInterest = totalPayment - p;
+                    System.out.println("=======================");
                     System.out.println("Monthly EMI = " + Math.round(EMI));
                     System.out.println("Total Payment = " +Math.round( totalPayment));
                     System.out.println("Total Interest = " + Math.round(totalPayment));
-
+                    System.out.println("------------------------");
                     break;
                 case 2:
 
