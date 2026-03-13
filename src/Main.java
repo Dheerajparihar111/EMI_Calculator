@@ -11,7 +11,7 @@ public class Main {
             System.out.println("| 1) EMI Calculating   |");
             System.out.println("| 2) Simple Interest   |");
             System.out.println("| 3) Compound Interest |");
-            System.out.println("| 3) EXIT             |");
+            System.out.println("| 3) EXIT              |");
             System.out.println("------------------------");
             System.out.print("Enter Your Choice :");
             int choice = input.nextInt();
@@ -31,7 +31,13 @@ public class Main {
                     double EMI = (p * rate * Math.pow(1 + rate, Months)) /
                             (Math.pow(1 + rate, Months) - 1);
 
-                    System.out.println("Monthly EMI = " + EMI);
+                    double totalPayment = EMI * Months;
+
+                    double totalInterest = totalPayment - p;
+                    System.out.println("Monthly EMI = " + Math.round(EMI));
+                    System.out.println("Total Payment = " +Math.round( totalPayment));
+                    System.out.println("Total Interest = " + Math.round(totalPayment));
+
                     break;
                 case 2:
 
