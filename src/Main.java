@@ -37,7 +37,7 @@ public class Main {
                     System.out.println("=======================");
                     System.out.println("Monthly EMI = " + Math.round(EMI));
                     System.out.println("Total Payment = " +Math.round( totalPayment));
-                    System.out.println("Total Interest = " + Math.round(totalPayment));
+                    System.out.println("Total Interest = " + Math.round(totalInterest));
                     System.out.println("------------------------");
                     break;
                 case 2:
@@ -69,7 +69,7 @@ public class Main {
 
                     double compoundInterest = compoundPrincipal * Math.pow((1 + compoundRate / 100), compundTimePeriod) - compoundPrincipal;
 
-                    System.out.println("Compound Interest = " + compoundInterest);
+                    System.out.println("Compound Interest = " +Math.round(compoundInterest));
                     break;
 
                 case 4:
