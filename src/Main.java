@@ -11,7 +11,7 @@ public class Main {
             System.out.println("| 1) EMI Calculating   |");
             System.out.println("| 2) Simple Interest   |");
             System.out.println("| 3) Compound Interest |");
-            System.out.println("| 3) EXIT              |");
+            System.out.println("| 3) EXIT             |");
             System.out.println("------------------------");
             System.out.print("Enter Your Choice :");
             int choice = input.nextInt();
