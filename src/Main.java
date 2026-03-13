@@ -53,7 +53,7 @@ public class Main {
 
                     double SI = (simplePrincipal * simpleInterestRate * timePeriod) / 100;
 
-                    System.out.println("Simple Interest = " + SI);
+                    System.out.println("Simple Interest = " +Math.round( SI));
                     break;
 
                 case 3:
