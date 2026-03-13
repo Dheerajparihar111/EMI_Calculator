@@ -7,11 +7,12 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.println("===========Wel-come to EMI Calculator===========");
         while (true) {
-            System.out.println("______________________");
-            System.out.println("| 1) EMI Calculating |");
-            System.out.println("| 2) Simple Interest |");
-            System.out.println("| 3) EXIT            |");
-            System.out.println("----------------------");
+            System.out.println("________________________");
+            System.out.println("| 1) EMI Calculating   |");
+            System.out.println("| 2) Simple Interest   |");
+            System.out.println("| 3) Compound Interest |");
+            System.out.println("| 3) EXIT              |");
+            System.out.println("------------------------");
             System.out.print("Enter Your Choice :");
             int choice = input.nextInt();
             switch (choice) {
@@ -47,7 +48,24 @@ public class Main {
 
                     System.out.println("Simple Interest = " + SI);
                     break;
+
                 case 3:
+
+                    System.out.println("Enter Principal:");
+                    double compoundPrincipal = input.nextDouble();
+
+                    System.out.println("Enter Rate:");
+                    double compoundRate = input.nextDouble();
+
+                    System.out.println("Enter Time (years):");
+                    double compundTimePeriod = input.nextDouble();
+
+                    double compoundInterest = compoundPrincipal * Math.pow((1 + compoundRate / 100), compundTimePeriod) - compoundPrincipal;
+
+                    System.out.println("Compound Interest = " + compoundInterest);
+                    break;
+
+                case 4:
                     System.out.println("Thank You For Using EMI Calculator");
                     System.exit(0);
             }
